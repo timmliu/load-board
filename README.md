@@ -1,6 +1,10 @@
 # Load Board
 
-This is a load board with a list view, detailed load view, and pub-sub ui updates.
+This is a load board with a list view, detailed view, and pub-sub ui updates.
+
+## Resources
+
+[Icons](https://fontawesome.com/cheatsheet?from=io)
 
 ---
 
