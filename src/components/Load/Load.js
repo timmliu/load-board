@@ -1,5 +1,7 @@
 import React from 'react'
 import styles from './Load.module.css'
+import equipment from '../../constants'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Load = props => {
   const { id, date, origin, destination, locked, status, value } = props
