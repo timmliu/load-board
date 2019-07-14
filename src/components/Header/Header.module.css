@@ -1,3 +1,27 @@
 .header {
   padding: 20px 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggleOn {
+  color: var(--available-color);
+}
+
+.toggleOff {
+  color: var(--booked-color);
+}
+
+.displayAvailableOnlyWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 190px;
+}
+
+.displayAvailableOnlyLabel {
+  font-family: 'Roboto';
+  font-size: 16px;
+  margin-right: 5px;
 }
