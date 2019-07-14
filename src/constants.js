@@ -1,5 +1,5 @@
 export const equipment = {
-  "F": "PICKUP",
-  "R": "MOVING",
-  "V": "STANDARD"
+  "F": "truck-pickup",
+  "R": "truck-moving",
+  "V": "truck"
 }

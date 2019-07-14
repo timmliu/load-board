@@ -4,6 +4,7 @@
   --border-color-highlight: #333333;
   --available-color: #50E3C2;
   --booked-color: #9B9B9B;
+  --main-text-color: #000000;
 }
 
 @font-face {

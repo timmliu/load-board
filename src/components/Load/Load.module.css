@@ -6,6 +6,7 @@
   justify-content: space-between;
   padding: 10px;
   margin-top: 20px;
+  min-width: 600px;
 }
 
 .load:hover {
@@ -21,4 +22,53 @@
 .loadBooked {
   composes: load;
   box-shadow: 7px 7px 4px 0 var(--booked-color);
+}
+
+.id {
+  font-family: 'BigJohn';
+  font-size: 30px;
+  color: var(--main-text-color);
+}
+
+.date {
+  font-family: 'RobotoMono';
+  font-size: 20px;
+  color: var(--main-text-color);
+}
+
+.sides {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.left {
+  composes: sides;
+  text-align: left;
+}
+
+.right {
+  composes: sides;
+  text-align: right;
+}
+
+.value {
+  font-family: 'RobotoMono';
+  font-size: 20px;
+  color: var(--main-text-color);
+}
+
+.mid {
+  display: flex;
+  justify-content: space-evenly;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.origin,
+.destination {
+  font-family: 'Roboto';
+  font-size: 24px;
+  color: var(--main-text-color);
 }
