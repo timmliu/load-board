@@ -8,6 +8,11 @@
   margin-top: 25px;
 }
 
+.load:hover {
+  border-color: var(--border-color-dark);
+  cursor: pointer;
+}
+
 .loadAvailable {
   composes: load;
   box-shadow: 7px 7px 4px 0 var(--available-color);

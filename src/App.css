@@ -1,6 +1,7 @@
 :root {
   --bg-color: #EEEEEE;
   --border-color: #979797;
+  --border-color-highlight: #333333;
   --available-color: #50E3C2;
   --booked-color: #9B9B9B;
 }
