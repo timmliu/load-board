@@ -1,0 +1,43 @@
+.detailed {
+  background-color: var(--bg-color-2);
+  border: 1px solid var(--border-color);
+  box-shadow: 7px -3px 4px 0 rgba(0,0,0,0.50);
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 470px;
+  min-height: 360px;
+  padding: 20px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.id {
+  font-family: 'BIGJOHN';
+  font-size: 20px;
+  color: var(--main-text-color);
+}
+
+.collapse {
+  cursor: pointer;
+  padding: 0 20px;
+}
+
+.data {
+  font-family: 'RobotoMono';
+  font-size: 20px;
+  line-height: 42px;
+  color: var(--main-text-color);
+  margin-top: 20px;
+}
+
+.dataLabel {
+  color: var(--secondary-text-color);
+  font-family: 'Roboto';
+  font-size: 18px;
+  user-select: none;
+}

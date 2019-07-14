@@ -1,10 +1,12 @@
 :root {
   --bg-color: #EEEEEE;
+  --bg-color-2: #DEDEDE;
   --border-color: #979797;
   --border-color-highlight: #333333;
   --available-color: #50E3C2;
   --booked-color: #9B9B9B;
-  --main-text-color: #000000;
+  --main-text-color: #333333;
+  --secondary-text-color: #666666;
 }
 
 @font-face {

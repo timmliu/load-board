@@ -1,13 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import styles from './Load.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Equipment from '../Equipment/Equipment'
+import { DisplayContext } from '../../App'
 
 const Load = props => {
+  const { setSelectedLoad } = useContext(DisplayContext)
   const { id, date, origin, destination, equipment, locked, status, value } = props
 
   return (
-    <div className={status === 'available' ? styles.loadAvailable : styles.loadBooked }>
+    <div className={status === 'available' ? styles.loadAvailable : styles.loadBooked } onClick={() => setSelectedLoad(props)}>
       <div className={styles.left}>
         <div className={styles.id}>{id}</div>
         <div className={styles.date}>{date}</div>
