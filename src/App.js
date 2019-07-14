@@ -6,9 +6,9 @@ import LoadDetailed from './components/LoadDetailed/LoadDetailed'
 import { empty } from './constants'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faSyncAlt, faLongArrowAltRight, faLock, faLockOpen, faChevronDown, faCaretDown, faTruck, faTruckMoving, faTruckPickup, faToggleOn, faToggleOff} from '@fortawesome/free-solid-svg-icons'
+import { faLongArrowAltRight, faLock, faLockOpen, faChevronDown, faCaretDown, faTruck, faTruckMoving, faTruckPickup, faToggleOn, faToggleOff} from '@fortawesome/free-solid-svg-icons'
 
-library.add(faSyncAlt, faLongArrowAltRight, faLock, faLockOpen, faChevronDown, faCaretDown, faTruck, faTruckMoving, faTruckPickup, faToggleOn, faToggleOff)
+library.add(faLongArrowAltRight, faLock, faLockOpen, faChevronDown, faCaretDown, faTruck, faTruckMoving, faTruckPickup, faToggleOn, faToggleOff)
 
 export const DisplayContext = React.createContext({
   displayAvailableOnly: null,

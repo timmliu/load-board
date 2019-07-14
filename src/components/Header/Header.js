@@ -8,7 +8,6 @@ const Header = () => {
 
   return (
     <div className={styles.header}>
-      <span><FontAwesomeIcon size="1x" icon="sync-alt" /></span>
       <span className={styles.displayAvailableOnlyWrapper} onClick={() => {
         setDisplayAvailableOnly(!displayAvailableOnly)
         setSelectedLoad(null)
