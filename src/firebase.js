@@ -1,3 +1,4 @@
+const { useList, useListKeys, useListVals, useObject, useObjectVal } = require("react-firebase-hooks/database")
 const firebase = require("firebase/app")
 require("firebase/database")
 
@@ -9,4 +10,6 @@ const config = {
 const app = firebase.initializeApp(config)
 const db = firebase.database(app)
 
-export default db
+module.exports = {
+  db, useList, useListKeys, useListVals, useObject, useObjectVal
+}
