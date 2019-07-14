@@ -1,0 +1,19 @@
+.load {
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 25px;
+}
+
+.loadAvailable {
+  composes: load;
+  box-shadow: 7px 7px 4px 0 var(--available-color);
+}
+
+.loadBooked {
+  composes: load;
+  box-shadow: 7px 7px 4px 0 var(--booked-color);
+}
