@@ -1,3 +1,4 @@
 .loads {
   padding: 0 20px 20px;
+  user-select: none;
 }

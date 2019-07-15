@@ -10,7 +10,7 @@ const LoadDetailed = () => {
   return (
     <div className={styles.detailed}>
       <div className={styles.top}>
-        <div className={styles.id}>{ id }</div>
+        <div className={styles.id}><span className={styles.dataLabel}>id:</span> { id }</div>
         <span className={styles.collapse} onClick={() => setSelectedLoad(null)}><FontAwesomeIcon color="#9B9B9B" size="2x" icon="chevron-down" /></span>
         {
           locked
