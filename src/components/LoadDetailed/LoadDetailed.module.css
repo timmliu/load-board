@@ -41,3 +41,22 @@
   font-size: 18px;
   user-select: none;
 }
+
+.statusRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status {
+  margin-left: 10px;
+}
+
+.toggleOn {
+  color: var(--available-color);
+}
+
+.toggleOff {
+  color: var(--booked-color);
+}

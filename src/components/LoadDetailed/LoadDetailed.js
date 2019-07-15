@@ -24,7 +24,24 @@ const LoadDetailed = () => {
         <div><span className={styles.dataLabel}>date:</span> {date}</div>
         <div><span className={styles.dataLabel}>value:</span> {value}</div>
         <div><span className={styles.dataLabel}>equipment:</span> {equipment}</div>
-        <div><span className={styles.dataLabel}>status:</span> {status}</div>
+        <div className={styles.statusRow}>
+          <span>
+            <span className={styles.dataLabel}>status:</span>
+            <span className={styles.status}>{status}</span>
+          </span>
+          <span>
+            {
+              !locked &&
+              <span className={styles.statusToggleWrapper}>
+                {
+                  status === 'available'
+                    ? <span className={styles.toggleOn} onClick={() => setSelectedLoad(Object.assign({}, selectedLoad, {status: 'booked'}))}><FontAwesomeIcon size="2x" icon="toggle-on" /></span>
+                    : <span className={styles.toggleOff} onClick={() => setSelectedLoad(Object.assign({}, selectedLoad, {status: 'available'}))}><FontAwesomeIcon size="2x" icon="toggle-off" /></span>
+                }
+              </span>
+            }
+          </span>
+        </div>
       </div>
     </div>
   )
