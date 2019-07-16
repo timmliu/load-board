@@ -2,9 +2,17 @@
 
 This is a load board with a list view, detailed view, and pub-sub ui updates.
 
-## Resources
+## Setup
+1. clone repo
+1. cd into project directory
+1. `yarn`
+1. `yarn start`
+1. Development server should autoload, if not visit http://localhost:3000/
 
+## Resources
+[React Firebase Hooks](https://github.com/CSFrequency/react-firebase-hooks)
 [Icons](https://fontawesome.com/cheatsheet?from=io)
+[Font Awesome Cheatshet](https://fontawesome.com/cheatsheet?from=io)
 
 ---
 
