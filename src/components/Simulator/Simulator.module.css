@@ -1,0 +1,18 @@
+.simulator {
+  display: flex;
+  justify-content: left;
+  margin-top: 60px;
+}
+
+.simulateWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.simulateLabel {
+  font-family: 'Roboto';
+  font-size: 16px;
+  margin-right: 5px;
+  user-select: none;
+}

@@ -3,6 +3,7 @@ import { db, useListVals } from '../../firebase'
 import styles from './LoadList.module.css'
 import Load from '../Load/Load'
 import LoadDetailed from '../LoadDetailed/LoadDetailed'
+import Simulator from '../Simulator/Simulator'
 import { DisplayContext } from '../../App'
 
 const LoadList = () => {
@@ -33,6 +34,7 @@ const LoadList = () => {
                 : <div>No loads available.</div>
         }
         { selectedLoad && <LoadDetailed /> }
+        { !isLoading && loads.length > 0 && <Simulator /> }
     </div>
   )
 }
