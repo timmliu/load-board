@@ -31,6 +31,11 @@ This is a load board with a list view, detailed view, and pub-sub ui updates.
 1. Search capabilities?
 1. How to better handle enumerable type (e.g. status: available/booked)?
 
+## Next Steps
+- Auth/Security
+- Search?
+- …
+
 ## Resources
 [React Firebase Hooks](https://github.com/CSFrequency/react-firebase-hooks)
 [Icons](https://fontawesome.com/cheatsheet?from=io)
