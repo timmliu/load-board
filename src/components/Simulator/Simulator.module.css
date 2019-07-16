@@ -1,6 +1,8 @@
 .simulator {
+  position: absolute;
+  left: 25px;
+  bottom: 20px;
   display: flex;
-  justify-content: left;
   margin-top: 60px;
 }
 
