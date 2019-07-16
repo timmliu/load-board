@@ -11,6 +11,15 @@ const Header = () => {
 
   return (
     <div className={styles.header}>
+      <span className={styles.simulateWrapper}>
+        <span className={styles.simulateLabel}>Simulate DB updates</span>
+        {
+          simulating
+            ? <span className={styles.toggleOn} onClick={() => simulation.stop()}><FontAwesomeIcon size="2x" icon="toggle-on" /></span>
+            : <span className={styles.toggleOff} onClick={() => { simulation.start(); setSimulating(true); }}><FontAwesomeIcon size="2x" icon="toggle-off" /></span>
+        }
+      </span>
+
       <span className={styles.displayAvailableOnlyWrapper} onClick={() => {
         setDisplayAvailableOnly(!displayAvailableOnly)
         setSelectedLoad(null)
@@ -20,15 +29,6 @@ const Header = () => {
           displayAvailableOnly
             ? <span className={styles.toggleOn}><FontAwesomeIcon size="2x" icon="toggle-on" /></span>
             : <span className={styles.toggleOff}><FontAwesomeIcon size="2x" icon="toggle-off" /></span>
-        }
-      </span>
-
-      <span className={styles.simulateWrapper}>
-        <span className={styles.simulateLabel}>Simulate DB updates</span>
-        {
-          simulating
-            ? <span className={styles.toggleOn} onClick={() => simulation.stop()}><FontAwesomeIcon size="2x" icon="toggle-on" /></span>
-            : <span className={styles.toggleOff} onClick={() => { simulation.start(); setSimulating(true); }}><FontAwesomeIcon size="2x" icon="toggle-off" /></span>
         }
       </span>
     </div>
