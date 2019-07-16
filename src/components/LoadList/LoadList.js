@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { db, useListVals } from '../../firebase'
 import styles from './LoadList.module.css'
 import Load from '../Load/Load'
@@ -7,9 +7,12 @@ import { DisplayContext } from '../../App'
 
 const LoadList = () => {
   const [values] = useListVals(db.ref('loads'))
-  const { displayAvailableOnly, selectedLoad } = useContext(DisplayContext)
-
+  const { displayAvailableOnly, selectedLoad, setSelectedLoad } = useContext(DisplayContext)
   const loads = displayAvailableOnly ? values.filter(v => v.status === 'available') : values
+
+  useEffect(() => {
+    if (selectedLoad) setSelectedLoad(loads.find(load => load.id === selectedLoad.id))
+  }, [loads, selectedLoad, setSelectedLoad])
 
   return (
     <div className={ styles.loads }>
