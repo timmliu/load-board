@@ -28,10 +28,10 @@ const LoadList = () => {
     <div className={ styles.loads }>
         {
           isLoading
-            ? <div>Loading…</div>
+            ? <div className={styles.loading}>Loading…</div>
             : loads.length > 0
                 ? loads.map(load => <Load key={load && load.id} {...load} />)
-                : <div>No loads available.</div>
+                : <div className={styles.noLoads}>No loads available.</div>
         }
         { selectedLoad && <LoadDetailed /> }
         { !isLoading && loads.length > 0 && <Simulator /> }

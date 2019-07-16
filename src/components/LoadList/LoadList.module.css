@@ -2,3 +2,11 @@
   padding: 0 20px 20px;
   user-select: none;
 }
+
+.loading,
+.noLoads {
+  font-family: 'RobotoMono';
+  text-align: center;
+  margin-top: 40px;
+  font-size: 40px;
+}
