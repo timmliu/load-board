@@ -33,6 +33,7 @@ This is a load board with a list view, detailed view, and pub-sub ui updates.
 
 ## Next Steps
 - Auth/Security
+- Component testing
 - Search?
 - …
 
