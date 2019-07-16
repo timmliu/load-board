@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './App.css';
 import Header from './components/Header/Header'
 import LoadList from './components/LoadList/LoadList'
-import LoadDetailed from './components/LoadDetailed/LoadDetailed'
 import { empty } from './constants'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -33,7 +32,6 @@ function App() {
       }}>
         <Header />
         <LoadList />
-        { selectedLoad && <LoadDetailed /> }
       </DisplayContext.Provider>
     </div>
   );

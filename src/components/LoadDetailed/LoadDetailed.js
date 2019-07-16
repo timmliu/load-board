@@ -2,10 +2,20 @@ import React, { useContext } from 'react'
 import styles from './LoadDetailed.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { DisplayContext } from '../../App'
+import { db } from '../../firebase'
 
 const LoadDetailed = () => {
   const { selectedLoad, setSelectedLoad } = useContext(DisplayContext)
   const { id, locked, origin, destination, date, value, equipment, status } = selectedLoad
+
+  function updateLoad(status) {
+    db.ref(`loads/${selectedLoad.id}`).update({ status })
+    .then(_snapshot => setSelectedLoad(Object.assign({}, selectedLoad, { status })))
+    .catch(error => {
+      console.log(error)
+      alert('Something went wrong. Please try again later.')
+    })
+  }
 
   return (
     <div className={styles.detailed}>
@@ -35,8 +45,8 @@ const LoadDetailed = () => {
               <span className={styles.statusToggleWrapper}>
                 {
                   status === 'available'
-                    ? <span className={styles.toggleOn} onClick={() => setSelectedLoad(Object.assign({}, selectedLoad, {status: 'booked'}))}><FontAwesomeIcon size="2x" icon="toggle-on" /></span>
-                    : <span className={styles.toggleOff} onClick={() => setSelectedLoad(Object.assign({}, selectedLoad, {status: 'available'}))}><FontAwesomeIcon size="2x" icon="toggle-off" /></span>
+                    ? <span className={styles.toggleOn} onClick={() => updateLoad('booked')}><FontAwesomeIcon size="2x" icon="toggle-on" /></span>
+                    : <span className={styles.toggleOff} onClick={() => updateLoad('available')}><FontAwesomeIcon size="2x" icon="toggle-off" /></span>
                 }
               </span>
             }

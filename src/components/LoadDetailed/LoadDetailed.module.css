@@ -53,6 +53,10 @@
   margin-left: 10px;
 }
 
+.statusToggleWrapper {
+  cursor: pointer;
+}
+
 .toggleOn {
   color: var(--available-color);
 }
