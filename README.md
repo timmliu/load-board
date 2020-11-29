@@ -8,6 +8,7 @@ This is a load board with a list view, detailed view, and pub-sub ui updates.
 1. `yarn`
 1. `yarn start`
 1. Development server should load automatically, if not visit: http://localhost:3000/
+1. Snapshot of DB can be found in `load-board-*-.json`
 
 ## Process
 1. Read over specs/requirements

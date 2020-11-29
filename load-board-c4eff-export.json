@@ -1,0 +1,64 @@
+{
+  "loads" : {
+    "0001" : {
+      "date" : "2019-08-01",
+      "destination" : "Biloxi, MS",
+      "equipment" : "V",
+      "id" : "0001",
+      "locked" : true,
+      "origin" : "Akron, OH",
+      "status" : "available",
+      "value" : 110000.0
+    },
+    "0002" : {
+      "date" : "2019-08-01",
+      "destination" : "Las Vegas, NV",
+      "equipment" : "V",
+      "id" : "0002",
+      "locked" : false,
+      "origin" : "St. Louis, MO",
+      "status" : "booked",
+      "value" : 89000.0
+    },
+    "0003" : {
+      "date" : "2019-08-02",
+      "destination" : "Hamburg, PA",
+      "equipment" : "R",
+      "id" : "0003",
+      "locked" : true,
+      "origin" : "Chicago, IL",
+      "status" : "available",
+      "value" : 600000.0
+    },
+    "0004" : {
+      "date" : "2019-08-02",
+      "destination" : "Las Vegas, NV",
+      "equipment" : "R",
+      "id" : "0004",
+      "locked" : true,
+      "origin" : "Chicago, IL",
+      "status" : "booked",
+      "value" : 250000.0
+    },
+    "0005" : {
+      "date" : "2019-08-01",
+      "destination" : "Des Moines, IA",
+      "equipment" : "V",
+      "id" : "0005",
+      "locked" : false,
+      "origin" : "Galesburg, IL",
+      "status" : "available",
+      "value" : 780000.0
+    },
+    "0006" : {
+      "date" : "2019-08-01",
+      "destination" : "Boulder, CO",
+      "equipment" : "F",
+      "id" : "0006",
+      "locked" : true,
+      "origin" : "St. Charles, IL",
+      "status" : "booked",
+      "value" : 100000.0
+    }
+  }
+}
